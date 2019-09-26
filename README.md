@@ -30,9 +30,9 @@ The gallery images are related to a 'Tag' that can be insert in the header searc
 
 
 ## Running unit tests	The following changes need to be implemented to the gallery:
-  1. Make images popup on click.
-  2. Turn the Gallery into 'infinite-scrolling' gallery (for example: facebook feed).
-  3. Add a uniq feature. Here is where you can go wild and show us what you can do.
+  1. Make images popup on click.- Done
+  2. Turn the Gallery into 'infinite-scrolling' gallery (for example: facebook feed). I did it on 100+10 images. But how I can understand I should did query to you backend with parametrs "from- to " to load new images, for exemple from 100 to 150 images. But I see only parametr per_page and I don;t know how can I did from 100 to 150 image.
+  3. Add a uniq feature. Here is where you can go wild and show us what you can do - .I did mdb- of five images
   4. BONUS: Implement the infinite scrolling without using third party packages
 
 
