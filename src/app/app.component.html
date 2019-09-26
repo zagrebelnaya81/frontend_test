@@ -1,0 +1,16 @@
+<div class="row header m-0">
+  <div class="col-12 pb-5 d-flex flex-column align-items-center">
+    <mdb-carousel style="    margin-left: 0px; width: 200px;" class="carousel slide carousel-fade"  [animation]="'fade'">
+      <mdb-carousel-item *ngFor="let photo of this.carousel; let photoIndex = index">
+        <image  [imageData]="carousel[photoIndex]"></image>
+      </mdb-carousel-item>
+    </mdb-carousel>
+    <h3 class="mb-4">Tpredict Image Searcher</h3>
+    <input type="text" #searchInput placeholder="Search an image tag" (input)="emitEventToChild(searchInput.value)">
+  </div>
+</div>
+<div class="row m-0">
+  <div class="col-12 align-items-center">
+    <gallery [events]="eventsSubject.asObservable()"></gallery>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="row m-0">
+    <div  *ngFor="let photo of this.gallery; let photoIndex = index" class="col-12 d-flex flex-wrap pt-3 justify-content-around">
+        <image *ngFor="let photo of this.gallery; let photoIndex = index" [imageData]="gallery[photoIndex]" class="pb-2" (click)="openModal('custom-modal-'+photoIndex)"></image>
+      <jw-modal id="custom-modal-{{photoIndex}}">
+        <image [imageData]="gallery[photoIndex]"></image>
+        <br/>
+        <button class ="close" (click)="closeModal('custom-modal-'+photoIndex);">X</button>
+      </jw-modal>
+    </div>
+</div>
